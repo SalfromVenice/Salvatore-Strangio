@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Questrial&display=swap");
+
+@import "./theme.css";
+
+:root {
+    font-family: "Questrial", Inter, system-ui, Avenir, Helvetica, Arial,
+        sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @apply text-primary-dark;
+    @apply dark:text-primary-light;
+}
+
+h1,
+h2 {
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+button > p {
+    font-family: "Lato", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3.2em;
+    font-family: "Questrial", Inter, system-ui, Avenir, Helvetica, Arial;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: "Lato", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}

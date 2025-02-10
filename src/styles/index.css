@@ -16,3 +16,17 @@
         drop-shadow(-2px 0 0 white) drop-shadow(0 -2px 0 white)
         drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
 }
+
+.sticker-themed {
+    filter: drop-shadow(1.5px 0 0 white) drop-shadow(0 1.5px 0 white)
+        drop-shadow(-1.5px 0 0 white) drop-shadow(0 -1.5px 0 white)
+        drop-shadow(1.5px 1.5px 1.5px rgba(0, 0, 0, 0.3));
+}
+
+.dark .sticker-themed {
+    filter: drop-shadow(2px 0 0 var(--color-secondary-dark))
+        drop-shadow(0 2px 0 var(--color-secondary-dark))
+        drop-shadow(-2px 0 0 var(--color-secondary-dark))
+        drop-shadow(0 -2px 0 var(--color-secondary-dark))
+        drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+}

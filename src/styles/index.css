@@ -1,13 +1,15 @@
-@import "./typography.css"; /* Typography styles */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Questrial&display=swap");
+
 @import "./theme.css"; /* variabili del tema */
+@import "./typography.css"; /* Typography styles */
 
 @import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
+
+@custom-variant dark (&:where(.dark, .dark *)); /* dark mode con classe "dark" */
 
 :root {
     @apply bg-secondary-light;
     @apply dark:bg-secondary-dark;
-    color-scheme: light dark;
     transition: all 0.3s linear;
 }
 
@@ -18,15 +20,25 @@
 }
 
 .sticker-themed {
-    filter: drop-shadow(1.5px 0 0 white) drop-shadow(0 1.5px 0 white)
-        drop-shadow(-1.5px 0 0 white) drop-shadow(0 -1.5px 0 white)
-        drop-shadow(1.5px 1.5px 1.5px rgba(0, 0, 0, 0.3));
+    text-shadow:
+        2px 0 white,
+        -2px 0 white,
+        0 2px white,
+        0 -2px white,
+        1px 1px white,
+        -1px -1px white,
+        1px -1px white,
+        -1px 1px white;
 }
 
 .dark .sticker-themed {
-    filter: drop-shadow(2px 0 0 var(--color-secondary-dark))
-        drop-shadow(0 2px 0 var(--color-secondary-dark))
-        drop-shadow(-2px 0 0 var(--color-secondary-dark))
-        drop-shadow(0 -2px 0 var(--color-secondary-dark))
-        drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+    text-shadow:
+        2px 0 var(--color-secondary-dark),
+        -2px 0 var(--color-secondary-dark),
+        0 2px var(--color-secondary-dark),
+        0 -2px var(--color-secondary-dark),
+        1px 1px var(--color-secondary-dark),
+        -1px -1px var(--color-secondary-dark),
+        1px -1px var(--color-secondary-dark),
+        -1px 1px var(--color-secondary-dark);
 }

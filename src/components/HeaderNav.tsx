@@ -12,8 +12,10 @@ export const HeaderNav = () => {
                     width={80}
                     className="sticker"
                 />
-                <h3 className="sticker-themed absolute top-1/2 left-1/2 -translate-1/2 !font-questrial text-2xl leading-none whitespace-nowrap text-accent-light dark:text-accent-dark dark:drop-shadow-dark">
-                    {"< "}S{" />"}
+                <h3 className="sticker-themed absolute top-1/2 left-1/2 -translate-1/2 !font-questrial text-xl leading-none whitespace-nowrap text-accent-light dark:text-accent-dark dark:drop-shadow-dark">
+                    <span className="align-top leading-9">{"< "}</span>
+                    <span className="text-3xl">Sal</span>
+                    <span className="align-top leading-9">{" />"}</span>
                 </h3>
             </div>
 

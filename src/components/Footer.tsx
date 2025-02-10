@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 export const Footer = () => {
     const { t } = useTranslation();
     return (
-        <footer className="absolute bottom-0.5 left-1/2 flex -translate-x-1/2 items-center gap-1 text-sm whitespace-nowrap sm:bottom-1 sm:text-base">
+        <footer className="absolute bottom-0.5 left-1/2 flex -translate-x-1/2 items-center gap-1 text-sm tracking-tighter whitespace-nowrap xxs:tracking-tight xs:tracking-normal sm:bottom-1 sm:text-base">
             © 2025 Salvatore Strangio -
             <a
                 href="https://www.google.com/maps/place/45.4338,12.3382/@45.4338,12.3382,12z"

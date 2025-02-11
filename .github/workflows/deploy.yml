@@ -1,5 +1,5 @@
 name: Deploy su GitHub Pages
-
+# Controls when the workflow will run
 on:
     push:
         branches:

@@ -1,15 +1,17 @@
 name: Deploy su GitHub Pages
-
+# Controls when the workflow will run
 on:
     push:
         branches:
             - main # Esegue il deploy ogni volta che fai push su main
 
+    workflow_dispatch:
+
 permissions:
     contents: write # Permette a GitHub Actions di scrivere nel branch gh-pages
 
 jobs:
-    deploy:
+    deployment:
         runs-on: ubuntu-latest
 
         steps:

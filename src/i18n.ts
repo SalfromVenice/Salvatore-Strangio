@@ -12,6 +12,9 @@ i18n.use(HttpBackend) // Carica traduzioni da file JSON
         interpolation: {
             escapeValue: false, // React già gestisce la protezione contro XSS
         },
+        backend: {
+            loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}/{{ns}}.json`,
+        },
     });
 
 export default i18n;

@@ -3,7 +3,11 @@ import { useState } from "react";
 import { handleThemeChange } from "../../utils/theme-helpers";
 
 export const ThemeToggle = () => {
-    const [state, setState] = useState<boolean>(false);
+    const html = document.getElementsByTagName("html")[0];
+
+    const [state, setState] = useState<boolean>(
+        html.classList.contains("dark"),
+    );
 
     const handleClick = () => {
         setState((prev) => !prev);

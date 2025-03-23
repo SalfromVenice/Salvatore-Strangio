@@ -21,5 +21,8 @@
     "ve_it": "Venezia, Italia",
     "more_about_1": "Sono uno sviluppatore frontend di Venezia. Mi occupo di creare esperienze digitali coinvolgenti e intuitive. In BIP utilizzo React e TypeScript per sviluppare soluzioni scalabili, trasformando idee complesse in interfacce fluide, migliorando continuamente l’interazione utente.",
     "more_about_2": "Il mio percorso nel mondo della tecnologia è iniziato con un bootcamp intensivo di 9 settimane, che ha segnato la mia transizione dal settore del trasporto pubblico allo sviluppo software.",
-    "more_about_3": "Oltre alla programmazione, amo viaggiare, i videogiochi e lo sport. Attualmente sto esplorando la cultura e la lingua giapponese. Mi trovo a mio agio in ruoli dinamici, dove posso applicare le mie competenze, affrontare nuove sfide e contribuire a progetti di impatto."
+    "more_about_3": "Oltre alla programmazione, amo viaggiare, i videogiochi e lo sport. Attualmente sto esplorando la cultura e la lingua giapponese. Mi trovo a mio agio in ruoli dinamici, dove posso applicare le mie competenze, affrontare nuove sfide e contribuire a progetti di impatto.",
+    "projects": "progetti.",
+    "app_1_title": "<Sal TO_DO />",
+    "app_1_desc": "Un’app web per la gestione delle attività con un backend Ruby on Rails che fornisce un’API REST, dotata di autenticazione e ospitata su Railway. L’integrazione continua (CI) automatizza il processo di deploy a ogni push sulla main branch. Il frontend è realizzato con React, TypeScript e Tailwind CSS, integrando i componenti Adobe React Aria per una migliore accessibilità. È ospitato su Netlify e presenta un design UX ottimizzato per dispositivi mobili. Anche in questo caso, la CI garantisce aggiornamenti automatici del deploy a ogni push sulla main branch."
 }

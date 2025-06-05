@@ -24,5 +24,8 @@
     "more_about_3": "Beyond coding, I enjoy traveling, gaming, and sports. I’m currently exploring Japanese culture and language. I thrive in dynamic roles where I can apply my skills, embrace new challenges, and contribute to impactful projects.",
     "projects": "projects.",
     "app_1_title": "<Sal TO_DO />",
-    "app_1_desc": "A task management web app with a Ruby on Rails backend that provides a REST API, including authentication, and is hosted on Railway. Continuous Integration (CI) automates the deployment process with each push to the main branch. The frontend is developed using React, TypeScript, and Tailwind CSS, incorporating Adobe React Aria components for enhanced accessibility. It is deployed on Netlify and features a UX design optimized for mobile devices. CI also ensures automatic deployment updates for each push to the main branch."
+    "app_1_desc": "A task management web app with a Ruby on Rails backend that provides a REST API, including authentication, and is hosted on Railway. Continuous Integration (CI) automates the deployment process with each push to the main branch. The frontend is developed using React, TypeScript, and Tailwind CSS, incorporating Adobe React Aria components for enhanced accessibility. It is deployed on Netlify and features a UX design optimized for mobile devices. CI also ensures automatic deployment updates for each push to the main branch.",
+    "app_2_title": "Fake Login Page",
+    "app_2_subtitle": "Cybersecurity Awareness Project",
+    "app_2_desc": "A fake login page developed as a tool for raising awareness about cybersecurity, designed to educate users and employees on the risks of phishing. The project is built as a single standalone HTML file with embedded CSS and JavaScript, realistically simulating a login interface. The page is hosted on GitHub Pages, making it easily accessible for demonstrations in controlled environments and training sessions."
 }

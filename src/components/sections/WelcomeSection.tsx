@@ -47,8 +47,8 @@ export const WelcomeSection = () => {
                     width="150px"
                 />
                 <Button
-                    text={t("more")}
-                    onClick={() => scrollIntoSection("about_me")}
+                    text={t("to_projects")}
+                    onClick={() => scrollIntoSection("projects")}
                     className="mx-auto py-4 xs:ml-0"
                     width="150px"
                 />

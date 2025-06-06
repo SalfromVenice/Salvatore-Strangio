@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import jp from "../../assets/images/logos/jp.png";
-import it from "../../assets/images/logos/it.png";
-import uk from "../../assets/images/logos/uk.png";
+import jp from "../../assets/images/jp.png";
+import it from "../../assets/images/it.png";
+import uk from "../../assets/images/uk.png";
 
 export const LangSection = () => {
     const { t } = useTranslation();

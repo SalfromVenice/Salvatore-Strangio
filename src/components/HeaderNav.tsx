@@ -1,4 +1,4 @@
-import wave from "../assets/images/logos/wave.png";
+import wave from "../assets/images/wave.png";
 import { LangSelect, ThemeToggle } from "./ui";
 
 export const HeaderNav = () => {

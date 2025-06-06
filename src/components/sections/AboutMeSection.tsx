@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import bip from "../../assets/images/logos/bip.png";
-import lw from "../../assets/images/logos/leWagon.svg";
-import jp from "../../assets/images/logos/jp.png";
+import bip from "../../assets/images/bip.png";
+import lw from "../../assets/images/leWagon.svg";
+import jp from "../../assets/images/jp.png";
 import i18n from "../../i18n";
 
 export const AboutMeSection = () => {

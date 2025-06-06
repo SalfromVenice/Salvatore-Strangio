@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
-import adobe from "../../../assets/images/logos/adobe.ico";
-import netlify from "../../../assets/images/logos/netlify.png";
-import rails from "../../../assets/images/logos/rails.png";
-import railway from "../../../assets/images/logos/railway.ico";
-import react from "../../../assets/images/logos/react.svg";
-import todo_2 from "../../../assets/images/screenshots/todos_2.png";
-import todo_3 from "../../../assets/images/screenshots/todos_3.png";
-import typescript from "../../../assets/images/logos/typescript.png";
+import adobe from "../../../assets/images/adobe.ico";
+import netlify from "../../../assets/images/netlify.png";
+import rails from "../../../assets/images/rails.png";
+import railway from "../../../assets/images/railway.ico";
+import react from "../../../assets/images/react.svg";
+import todo_2 from "../../../assets/images/todos_2.png";
+import todo_3 from "../../../assets/images/todos_3.png";
+import typescript from "../../../assets/images/typescript.png";
 import { ImageSticker } from "../../ui";
 
 export const SalToDo: React.FC = () => {

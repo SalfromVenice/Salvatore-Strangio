@@ -10,6 +10,7 @@
     "very_bg": "principiante assoluto",
     "theme": "tema",
     "more": "altro su di me",
+    "to_projects": "progetti",
     "contact": "contattami",
     "g_day": "Buon giorno",
     "g_noon": "Buon pomeriggio",
@@ -27,5 +28,7 @@
     "app_1_desc": "Un’app web per la gestione delle attività con un backend Ruby on Rails che fornisce un’API REST, dotata di autenticazione e ospitata su Railway. L’integrazione continua (CI) automatizza il processo di deploy a ogni push sulla main branch. Il frontend è realizzato con React, TypeScript e Tailwind CSS, integrando i componenti Adobe React Aria per una migliore accessibilità. È ospitato su Netlify e presenta un design UX ottimizzato per dispositivi mobili. Anche in questo caso, la CI garantisce aggiornamenti automatici del deploy a ogni push sulla main branch.",
     "app_2_title": "Finta Login Page",
     "app_2_subtitle": "Cybersecurity Awareness Project",
-    "app_2_desc": "Una finta pagina di login sviluppata come strumento di sensibilizzazione alla sicurezza informatica, pensata per educare utenti e dipendenti sui rischi del phishing. Il progetto consiste in un singolo file HTML standalone con CSS e JavaScript integrati, che simula realisticamente un’interfaccia di login. La pagina è ospitata su GitHub Pages, rendendola facilmente accessibile per dimostrazioni in ambienti controllati e attività di formazione."
+    "app_2_desc": "Una finta pagina di login sviluppata come strumento di sensibilizzazione alla sicurezza informatica, pensata per educare utenti e dipendenti sui rischi del phishing. Il progetto consiste in un singolo file HTML standalone con CSS e JavaScript integrati, che simula realisticamente un’interfaccia di login. La pagina è ospitata su GitHub Pages, rendendola facilmente accessibile per dimostrazioni in ambienti controllati e attività di formazione.",
+    "app_3_title": "DevStats",
+    "app_3_desc": "DevStats è un’applicazione monolitica costruita con Ruby on Rails, Vite, TypeScript e React, distribuita su Render. L’app permette di cercare un utente GitHub inserendo il suo username, e utilizza l’API GraphQL di GitHub per recuperare informazioni sulle repository pubbliche associate a quell’account. Una volta ottenuti i dati, DevStats analizza i linguaggi di programmazione utilizzati e visualizza un grafico interattivo che mostra la distribuzione dei linguaggi tra le repository. In questo modo, l’utente può esplorare facilmente quali sono i linguaggi più utilizzati da uno sviluppatore su GitHub, attraverso un’interfaccia moderna, veloce e completamente reattiva."
 }

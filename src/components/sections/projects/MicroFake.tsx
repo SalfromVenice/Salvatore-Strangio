@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import css3 from "../../../assets/images/css3.png";
-import fake_login_1 from "../../../assets/images/fake_login_1.png";
-import github from "../../../assets/images/github.png";
-import html5 from "../../../assets/images/html5.png";
-import javascript from "../../../assets/images/javascript.png";
+import css3 from "../../../assets/images/logos/css3.png";
+import fake_login_1 from "../../../assets/images/screenshots/fake_login_1.png";
+import github from "../../../assets/images/logos/github.png";
+import html5 from "../../../assets/images/logos/html5.png";
+import javascript from "../../../assets/images/logos/javascript.png";
 import { DemoBtn, ImageSticker } from "../../ui";
 
 export const MicroFake: React.FC = () => {
@@ -13,7 +13,7 @@ export const MicroFake: React.FC = () => {
         <li className="">
             <div className="mb-2 grid gap-2 sm:grid-cols-[auto_1fr]">
                 <div>
-                    <span className="flex gap-4">
+                    <span className="mb-1 flex items-center gap-4">
                         <h3>{t("app_2_title")}</h3>
                         <DemoBtn link="https://salfromvenice.github.io/microfake-login/" />
                     </span>

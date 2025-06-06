@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
-import devStats_1 from "../../../assets/images/devStats_1.png";
-import devStats_2 from "../../../assets/images/devStats_2.png";
-import rails from "../../../assets/images/rails.png";
-import react from "../../../assets/images/react.svg";
-import render from "../../../assets/images/render.png";
-import typescript from "../../../assets/images/typescript.png";
-import vite from "../../../assets/images/vite.svg";
+import devStats_1 from "../../../assets/images/screenshots/devStats_1.png";
+import devStats_2 from "../../../assets/images/screenshots/devStats_2.png";
+import rails from "../../../assets/images/logos/rails.png";
+import react from "../../../assets/images/logos/react.svg";
+import render from "../../../assets/images/logos/render.png";
+import typescript from "../../../assets/images/logos/typescript.png";
+import vite from "../../../assets/images/logos/vite.svg";
 import { DemoBtn, ImageSticker } from "../../ui";
 
 export const DevStats: React.FC = () => {

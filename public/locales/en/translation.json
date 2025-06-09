@@ -26,9 +26,9 @@
     "projects": "projects.",
     "app_1_title": "<Sal TO_DO />",
     "app_1_desc": "A task management web app with a Ruby on Rails backend that provides a REST API, including authentication, and is hosted on Railway. Continuous Integration (CI) automates the deployment process with each push to the main branch. The frontend is developed using React, TypeScript, and Tailwind CSS, incorporating Adobe React Aria components for enhanced accessibility. It is deployed on Netlify and features a UX design optimized for mobile devices. CI also ensures automatic deployment updates for each push to the main branch.",
-    "app_2_title": "Fake Login Page",
+    "app_2_title": "Demo UI Login",
     "app_2_subtitle": "Cybersecurity Awareness Project",
-    "app_2_desc": "A fake login page developed as a tool for raising awareness about cybersecurity, designed to educate users and employees on the risks of phishing. The project is built as a single standalone HTML file with embedded CSS and JavaScript, realistically simulating a login interface. The page is hosted on GitHub Pages, making it easily accessible for demonstrations in controlled environments and training sessions.",
+    "app_2_desc": "An interactive login UI demo developed for educational and cybersecurity awareness purposes. This project consists of a standalone HTML file with integrated CSS and JavaScript, designed to demonstrate how user interfaces can create a false sense of digital trust. Intended for use in workshops, controlled environments, and training sessions, the mockup is entirely static and does not collect or process any user data.",
     "app_3_title": "DevStats",
     "app_3_desc": "DevStats is a monolithic web application built with Ruby on Rails, Vite, TypeScript, and React, and deployed on Render. The app allows users to search for a GitHub account by username and uses GitHub’s GraphQL API to fetch data about the user’s public repositories. Once the data is retrieved, DevStats analyzes the programming languages used and displays an interactive chart showing the distribution of languages across repositories. This makes it easy to understand which languages a developer uses most, through a fast, modern, and fully responsive interface."
 }

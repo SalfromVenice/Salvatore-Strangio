@@ -10,7 +10,7 @@ export const MicroFake: React.FC = () => {
     const { t } = useTranslation();
 
     return (
-        <li className="">
+        <li>
             <div className="mb-2 grid gap-2 sm:grid-cols-[auto_1fr]">
                 <div>
                     <span className="flex gap-4">

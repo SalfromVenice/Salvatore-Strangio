@@ -13,7 +13,7 @@ export const SalToDo: React.FC = () => {
     const { t } = useTranslation();
 
     return (
-        <li className="">
+        <li>
             <div className="mb-2 grid gap-2 sm:grid-cols-[auto_1fr]">
                 <h3>{t("app_1_title")}</h3>
                 {/* <a

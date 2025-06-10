@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { DevStats, MicroFake, SalToDo } from "./projects";
+import { DemoUILogin, DevStats, SalToDo } from "./projects";
 
 export const ProjectsSection = () => {
     const { t } = useTranslation();
@@ -10,7 +10,7 @@ export const ProjectsSection = () => {
             <ul className="space-y-8 pt-8 xs:pt-12">
                 <SalToDo />
                 <hr className="border-accent-light dark:border-accent-dark" />
-                <MicroFake />
+                <DemoUILogin />
                 <hr className="border-accent-light dark:border-accent-dark" />
                 <DevStats />
             </ul>

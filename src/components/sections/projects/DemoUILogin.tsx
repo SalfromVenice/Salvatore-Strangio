@@ -6,7 +6,7 @@ import html5 from "../../../assets/images/html5.png";
 import javascript from "../../../assets/images/javascript.png";
 import { DemoBtn, ImageSticker } from "../../ui";
 
-export const MicroFake: React.FC = () => {
+export const DemoUILogin: React.FC = () => {
     const { t } = useTranslation();
 
     return (
@@ -15,7 +15,7 @@ export const MicroFake: React.FC = () => {
                 <div>
                     <span className="flex gap-4">
                         <h3>{t("app_2_title")}</h3>
-                        <DemoBtn link="https://salfromvenice.github.io/microfake-login/" />
+                        <DemoBtn link="https://salfromvenice.github.io/demo-ui-login/" />
                     </span>
                     <p className="text-sm">{t("app_2_subtitle")}</p>
                 </div>

@@ -1,15 +1,27 @@
 import { useTranslation } from "react-i18next";
-import devStats_1 from "../../../assets/images/devStats_1.png";
-import devStats_2 from "../../../assets/images/devStats_2.png";
+import devStats_dark_1 from "../../../assets/images/devStats_dark_1.png";
+import devStats_dark_2 from "../../../assets/images/devStats_dark_2.png";
+import devStats_light_1 from "../../../assets/images/devStats_light_1.png";
+import devStats_light_2 from "../../../assets/images/devStats_light_2.png";
 import rails from "../../../assets/images/rails.png";
 import react from "../../../assets/images/react.svg";
 import render from "../../../assets/images/render.png";
 import typescript from "../../../assets/images/typescript.png";
 import vite from "../../../assets/images/vite.svg";
+import { useIsThemeDark } from "../../../utils/useIsThemeDark";
 import { DemoBtn, ImageSticker } from "../../ui";
 
 export const DevStats: React.FC = () => {
     const { t } = useTranslation();
+    const isThemeDark = useIsThemeDark();
+
+    let img1 = devStats_light_1;
+    let img2 = devStats_light_2;
+
+    if (isThemeDark) {
+        img1 = devStats_dark_1;
+        img2 = devStats_dark_2;
+    }
 
     return (
         <li>
@@ -49,8 +61,8 @@ export const DevStats: React.FC = () => {
             <div className="grid gap-4 md:grid-cols-2">
                 <p className="t text-justify">{t("app_3_desc")}</p>
                 <div className="space-y-4 pt-2">
-                    <ImageSticker src={devStats_1} alt="dev-stast screenshot" />
-                    <ImageSticker src={devStats_2} alt="dev-stast screenshot" />
+                    <ImageSticker src={img1} alt="dev-stast screenshot" />
+                    <ImageSticker src={img2} alt="dev-stast screenshot" />
                 </div>
             </div>
         </li>

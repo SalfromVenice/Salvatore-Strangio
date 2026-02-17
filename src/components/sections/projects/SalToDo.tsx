@@ -28,41 +28,39 @@ export const SalToDo: React.FC = () => {
         <li>
             <div className="mb-2 grid gap-2 sm:grid-cols-[auto_1fr]">
                 <h3>{t("app_1_title")}</h3>
-                {/* <a
-                    className="peer flex items-center gap-2 text-xs underline-offset-4 transition-all hover:text-accent-light hover:underline hover:drop-shadow-light dark:hover:text-accent-dark dark:hover:drop-shadow-dark"
-                    href="https://sal-todo-app.netlify.app/"
-                    target="_blank"
-                >
-                    link
-                    <RocketLaunch size={18} />
-                </a> */}
                 <div className="col-span-full flex items-center justify-around gap-4 xs:col-span-1 xs:justify-end">
                     <img
+                        title="Ruby on Rails"
                         src={rails}
                         alt="Ruby on Rails logo"
                         className="sticker aspect-square h-6 transition-all hover:scale-105"
                     />
                     <img
+                        title="Railway"
                         src={railway}
                         alt="Railway logo"
                         className="sticker aspect-square h-6 transition-all hover:scale-105"
                     />
                     <img
+                        title="React"
                         src={react}
                         alt="React logo"
                         className="sticker aspect-square h-6 transition-all hover:scale-105"
                     />
                     <img
+                        title="TypeScript"
                         src={typescript}
                         alt="TypeScript logo"
                         className="sticker aspect-square h-6 transition-all hover:scale-105"
                     />
                     <img
+                        title="Adobe"
                         src={adobe}
                         alt="Adobe logo"
                         className="sticker aspect-square h-6 transition-all hover:scale-105"
                     />
                     <img
+                        title="Netlify"
                         src={netlify}
                         alt="Netlify logo"
                         className="sticker aspect-square h-6 transition-all hover:scale-105"
@@ -72,8 +70,14 @@ export const SalToDo: React.FC = () => {
             <div className="grid gap-4 md:grid-cols-2">
                 <p className="t text-justify">{t("app_1_desc")}</p>
                 <div className="space-y-4 pt-2">
-                    <ImageSticker src={img_1} alt="todo app screenshot" />
-                    <ImageSticker src={img_2} alt="todo app screenshot" />
+                    <ImageSticker
+                        src={img_1}
+                        alt={`Sal TODO - ${t("screenshot")}`}
+                    />
+                    <ImageSticker
+                        src={img_2}
+                        alt={`Sal TODO - ${t("screenshot")}`}
+                    />
                 </div>
             </div>
         </li>

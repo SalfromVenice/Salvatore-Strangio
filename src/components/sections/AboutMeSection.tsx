@@ -31,8 +31,9 @@ export const AboutMeSection = () => {
                 </p>
                 <a href="https://www.bip-group.com/" target="_blank">
                     <img
+                        title={t("visit")}
                         src={bip}
-                        alt="bip logo"
+                        alt="BIP logo"
                         width={50}
                         className="sticker absolute right-0 -bottom-2 -rotate-12 transition-transform hover:-rotate-4"
                     />
@@ -44,6 +45,7 @@ export const AboutMeSection = () => {
                 </p>
                 <a href="https://www.lewagon.com/" target="_blank">
                     <img
+                        title={t("visit")}
                         src={lw}
                         alt="leWagon logo"
                         width={50}

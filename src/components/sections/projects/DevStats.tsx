@@ -9,7 +9,7 @@ import render from "../../../assets/images/render.png";
 import typescript from "../../../assets/images/typescript.png";
 import vite from "../../../assets/images/vite.svg";
 import { useIsThemeDark } from "../../../utils/useIsThemeDark";
-import { DemoBtn, ImageSticker } from "../../ui";
+import { ImageSticker } from "../../ui";
 
 export const DevStats: React.FC = () => {
     const { t } = useTranslation();
@@ -26,34 +26,36 @@ export const DevStats: React.FC = () => {
     return (
         <li>
             <div className="mb-2 grid gap-2 sm:grid-cols-[auto_1fr]">
-                <div className="flex items-center gap-4">
-                    <h3>{t("app_3_title")}</h3>
-                    <DemoBtn link="https://dev-stats.onrender.com/" />
-                </div>
+                <h3>{t("app_3_title")}</h3>
                 <div className="col-span-full flex items-center justify-around gap-4 xs:col-span-1 xs:justify-end">
                     <img
+                        title="Vite"
                         src={vite}
-                        alt="vite logo"
+                        alt="Vite logo"
                         className="sticker -mr-1 aspect-square h-6 transition-all hover:scale-105"
                     />
                     <img
+                        title="React"
                         src={react}
-                        alt="react logo"
+                        alt="React logo"
                         className="sticker aspect-square h-6 transition-all hover:scale-105"
                     />
                     <img
+                        title="Typescript"
                         src={typescript}
-                        alt="typescript logo"
+                        alt="Typescript logo"
                         className="sticker aspect-square h-6 transition-all hover:scale-105"
                     />
                     <img
+                        title="Ruby on Rails"
                         src={rails}
-                        alt="rails logo"
+                        alt="Rails logo"
                         className="sticker aspect-square h-6 transition-all hover:scale-105"
                     />
                     <img
+                        title="Render"
                         src={render}
-                        alt="render logo"
+                        alt="Render logo"
                         className="sticker -mx-2 aspect-square h-9 transition-all hover:scale-105"
                     />
                 </div>
@@ -61,8 +63,14 @@ export const DevStats: React.FC = () => {
             <div className="grid gap-4 md:grid-cols-2">
                 <p className="t text-justify">{t("app_3_desc")}</p>
                 <div className="space-y-4 pt-2">
-                    <ImageSticker src={img1} alt="dev-stast screenshot" />
-                    <ImageSticker src={img2} alt="dev-stast screenshot" />
+                    <ImageSticker
+                        src={img1}
+                        alt={`Dev-Stats - ${t("screenshot")}`}
+                    />
+                    <ImageSticker
+                        src={img2}
+                        alt={`Dev-Stats - ${t("screenshot")}`}
+                    />
                 </div>
             </div>
         </li>

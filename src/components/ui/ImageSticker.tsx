@@ -13,6 +13,7 @@ export const ImageSticker: React.FC<PropsT> = ({ src, alt, className }) => {
     return (
         <div>
             <img
+                title={alt}
                 src={src}
                 alt={alt}
                 className={`sticker cursor-zoom-in border-4 border-white transition-transform hover:scale-[101%] ${className}`}

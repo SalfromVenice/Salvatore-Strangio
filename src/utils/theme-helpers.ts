@@ -1,4 +1,4 @@
-export const setPreferedColorScheme = () => {
+export const setPreferredColorScheme = () => {
     const html = document.getElementsByTagName("html")[0];
     if (
         window.matchMedia("(prefers-color-scheme: dark)").matches &&

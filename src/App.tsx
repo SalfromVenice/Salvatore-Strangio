@@ -1,9 +1,13 @@
 import { Footer, Frame, HeaderNav, Main } from "./components";
 import "./i18n";
-import { setPreferedColorScheme } from "./utils/theme-helpers";
+import { updateHTMLLang } from "./utils/text-helpers";
+import { setPreferredColorScheme } from "./utils/theme-helpers";
 
 function App() {
-    setPreferedColorScheme();
+    setPreferredColorScheme();
+
+    const currentLang = localStorage.getItem("i18nextLng") ?? "en";
+    updateHTMLLang(currentLang);
 
     return (
         <>

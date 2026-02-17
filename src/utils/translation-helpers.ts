@@ -1,5 +1,5 @@
 import i18n from "../i18n";
-import { handleLangChange } from "./text-helpers";
+import { handleLangChange, updateHTMLLang } from "./text-helpers";
 
 const languageFiles = import.meta.glob("/public/locales/*/translation.json");
 
@@ -13,6 +13,7 @@ export const getAvailableLanguages = () => {
 };
 
 export const handleTranslate = (lang: string) => {
+    updateHTMLLang(lang);
     handleLangChange();
     setTimeout(() => {
         i18n.changeLanguage(lang);

@@ -24,6 +24,9 @@ jobs:
                   node-version: 18
                   cache: npm
 
+            - name: Fai pulizia
+              run: rm -rf node_modules package-lock.json
+
             - name: Installa le dipendenze
               run: npm install
 

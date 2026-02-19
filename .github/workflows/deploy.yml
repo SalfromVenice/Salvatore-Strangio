@@ -1,38 +1,37 @@
 name: Deploy su GitHub Pages
-
+# Controls when the workflow will run
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+    push:
+        branches:
+            - main # Esegue il deploy ogni volta che fai push su main
+
+    workflow_dispatch:
 
 permissions:
-  contents: write
+    contents: write # Permette a GitHub Actions di scrivere nel branch gh-pages
 
 jobs:
-  deployment:
-    runs-on: ubuntu-latest
+    deployment:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout del repository
-        uses: actions/checkout@v4
+        steps:
+            - name: Checkout del repository
+              uses: actions/checkout@v4
 
-      - name: Imposta Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: npm
+            - name: Imposta Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 18
+                  cache: npm
 
-      - name: Pulisci e installa dipendenze
-        run: |
-          rm -rf node_modules package-lock.json
-          npm install
+            - name: Installa le dipendenze
+              run: npm install
 
-      - name: Crea la build
-        run: npm run build
+            - name: Crea la build
+              run: npm run build
 
-      - name: Pubblica su GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: dist
+            - name: Pubblica su GitHub Pages
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                  branch: gh-pages # Il branch dove verrà pubblicato il sito
+                  folder: dist # La cartella che contiene i file della build

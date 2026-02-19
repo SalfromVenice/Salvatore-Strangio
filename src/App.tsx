@@ -1,13 +1,16 @@
+import { useEffect } from "react";
 import { Footer, Frame, HeaderNav, Main } from "./components";
 import "./i18n";
 import { updateHTMLLang } from "./utils/text-helpers";
 import { setPreferredColorScheme } from "./utils/theme-helpers";
 
 function App() {
-    setPreferredColorScheme();
+    useEffect(() => {
+        setPreferredColorScheme();
 
-    const currentLang = localStorage.getItem("i18nextLng") ?? "en";
-    updateHTMLLang(currentLang);
+        const currentLang = localStorage.getItem("i18nextLng") ?? "en";
+        updateHTMLLang(currentLang);
+    }, []);
 
     return (
         <>

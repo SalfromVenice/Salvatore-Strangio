@@ -7,7 +7,7 @@ export const LangSection = () => {
     const { t } = useTranslation();
 
     return (
-        <div id="lang_section" className="mx-auto h-fit max-w-[35rem]">
+        <div id="lang_section" className="mx-auto h-fit max-w-140">
             <h2 className="t uppercase">{t("lang")}</h2>
             <ul className="mx-auto mt-12 grid w-fit justify-between gap-x-14 gap-y-4 pl-12 md:w-full md:grid-cols-[auto_auto_auto]">
                 <li className="relative">

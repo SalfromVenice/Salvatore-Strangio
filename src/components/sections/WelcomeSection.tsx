@@ -19,7 +19,7 @@ export const WelcomeSection = () => {
 
     return (
         <>
-            <div className="mx-auto w-full max-w-[35rem]">
+            <div className="mx-auto w-full max-w-140">
                 <img
                     src={me}
                     alt="memoji of me"

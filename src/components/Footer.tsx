@@ -1,4 +1,4 @@
-import { MapPinLine } from "@phosphor-icons/react";
+import { MapPinLineIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
@@ -11,7 +11,7 @@ export const Footer = () => {
                 target="_blank"
                 className="flex gap-1 underline-offset-3 transition-all hover:text-accent-light hover:underline dark:hover:text-accent-dark"
             >
-                <MapPinLine size={18} className="translate-y-0.75" />
+                <MapPinLineIcon size={18} className="translate-y-0.75" />
                 {t("ve_it")}
             </a>
         </footer>

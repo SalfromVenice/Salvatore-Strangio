@@ -10,7 +10,7 @@ export const AboutMeSection = () => {
     return (
         <div
             id="about_me"
-            className="mx-auto h-fit max-w-[35rem] animate-fade-in-slide-up"
+            className="mx-auto h-fit max-w-140 animate-fade-in-slide-up"
         >
             <h2 className="t uppercase">
                 {t("about")}

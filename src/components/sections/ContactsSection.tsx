@@ -1,4 +1,4 @@
-import { LinkedinLogo, Mailbox } from "@phosphor-icons/react";
+import { LinkedinLogoIcon, MailboxIcon } from "@phosphor-icons/react";
 import { useTranslation } from "react-i18next";
 
 export const ContactsSection = () => {
@@ -8,7 +8,7 @@ export const ContactsSection = () => {
         "flex cursor-pointer gap-1 text-lg leading-8 capitalize underline-offset-4 transition-all hover:text-accent-light hover:underline hover:drop-shadow-light xs:items-end dark:hover:text-accent-dark dark:hover:drop-shadow-dark";
 
     return (
-        <div id="contact_me" className="mx-auto h-fit max-w-[35rem]">
+        <div id="contact_me" className="mx-auto h-fit max-w-140">
             <h2 className="t uppercase">{t("contact_me")}</h2>
             <div className="flex justify-center gap-6 pt-8 xs:gap-12 xs:pt-12">
                 <a
@@ -17,11 +17,11 @@ export const ContactsSection = () => {
                     target="_blank"
                     className={tailwindClasses}
                 >
-                    <LinkedinLogo size={32} />
+                    <LinkedinLogoIcon size={32} />
                     LinkedIn
                 </a>
                 <a title={t("mail")} href={mailTo} className={tailwindClasses}>
-                    <Mailbox size={32} />
+                    <MailboxIcon size={32} />
                     {t("mail_me")}
                 </a>
             </div>

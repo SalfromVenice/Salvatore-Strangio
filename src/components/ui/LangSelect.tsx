@@ -1,4 +1,4 @@
-import { Translate } from "@phosphor-icons/react";
+import { TranslateIcon } from "@phosphor-icons/react";
 import {
     getAvailableLanguages,
     handleTranslate,
@@ -41,7 +41,7 @@ export const LangSelect = () => {
                 onClick={toggleMenu}
                 className="cursor-pointer rounded-md border border-accent-light/50 bg-primary-light/15 p-2 hover:border-accent-light hover:shadow-light focus:outline-none focus-visible:outline-none dark:border-accent-dark/30 dark:bg-primary-dark/10 dark:hover:border-accent-dark dark:hover:shadow-dark"
             >
-                <Translate />
+                <TranslateIcon />
             </button>
             <div
                 className={`absolute right-0 z-10 w-fit overflow-hidden rounded-md border-accent-light/50 bg-primary-light/85 transition-all duration-300 ${isOpen ? "block h-24 border px-4 py-2 backdrop-blur-xs" : "h-0 border-0"} hover:border-accent-light hover:shadow-light dark:border-accent-dark/30 dark:bg-primary-dark/85 dark:hover:border-accent-dark dark:hover:shadow-dark`}

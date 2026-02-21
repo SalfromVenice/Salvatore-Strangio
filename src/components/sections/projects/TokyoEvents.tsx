@@ -1,30 +1,16 @@
-import devStats_dark_1 from "../../../assets/images/devStats_dark_1.png";
-import devStats_dark_2 from "../../../assets/images/devStats_dark_2.png";
-import devStats_light_1 from "../../../assets/images/devStats_light_1.png";
-import devStats_light_2 from "../../../assets/images/devStats_light_2.png";
 import rails from "../../../assets/images/rails.png";
 import react from "../../../assets/images/react.svg";
-import render from "../../../assets/images/render.png";
+import tokyo_events_1 from "../../../assets/images/tokyo_events_1.png";
+import tokyo_events_2 from "../../../assets/images/tokyo_events_2.png";
 import typescript from "../../../assets/images/typescript.png";
 import vite from "../../../assets/images/vite.svg";
-import { useIsThemeDark } from "../../../utils/useIsThemeDark";
 import { ProjectSection } from "../../ui";
 
-export const DevStats: React.FC = () => {
-    const isThemeDark = useIsThemeDark();
-
-    let img1 = devStats_light_1;
-    let img2 = devStats_light_2;
-
-    if (isThemeDark) {
-        img1 = devStats_dark_1;
-        img2 = devStats_dark_2;
-    }
-
+export const TokyoEvents = () => {
     return (
         <ProjectSection
-            title={"app_3_title"}
-            description={"app_3_desc"}
+            title={"app_4_title"}
+            description={"app_4_desc"}
             technologies={[
                 {
                     title: "Vite",
@@ -46,21 +32,16 @@ export const DevStats: React.FC = () => {
                     src: rails,
                     alt: "Ruby on Rails logo",
                 },
-                {
-                    title: "Render",
-                    src: render,
-                    alt: "Render logo",
-                },
             ]}
             screenshots={[
                 {
                     title: "",
-                    src: img1,
+                    src: tokyo_events_1,
                     alt: "",
                 },
                 {
                     title: "",
-                    src: img2,
+                    src: tokyo_events_2,
                     alt: "",
                 },
             ]}

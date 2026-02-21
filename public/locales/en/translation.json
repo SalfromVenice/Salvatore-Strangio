@@ -31,6 +31,8 @@
     "app_2_desc": "An interactive login UI demo developed for educational and cybersecurity awareness purposes. This project consists of a standalone HTML file with integrated CSS and JavaScript, designed to demonstrate how user interfaces can create a false sense of digital trust. Intended for use in workshops, controlled environments, and training sessions, the mockup is entirely static and does not collect or process any user data.",
     "app_3_title": "DevStats",
     "app_3_desc": "DevStats is a monolithic web application built with Ruby on Rails, Vite, TypeScript, and React, and deployed on Render. The app allows users to search for a GitHub account by username and uses GitHub’s GraphQL API to fetch data about the user’s public repositories. Once the data is retrieved, DevStats analyzes the programming languages used and displays an interactive chart showing the distribution of languages across repositories. This makes it easy to understand which languages a developer uses most, through a fast, modern, and fully responsive interface.",
+    "app_4_title": "Tōkyō Events",
+    "app_4_desc": "Tokyo Events is a fullstack web application built with a Rails API backend and a React + TypeScript frontend. It allows users to discover events happening in Tokyo through an interactive map or a card-based list view. Users can drag the map to select a location, adjust the search radius, and filter between free and paid events. The app dynamically fetches geolocated data from the backend and keeps filters and views synchronized, providing a smooth and interactive browsing experience.",
     "visit": "visit the website",
     "screenshot": "screenshot",
     "mail": "Email contact"

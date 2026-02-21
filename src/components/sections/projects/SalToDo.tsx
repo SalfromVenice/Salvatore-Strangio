@@ -10,7 +10,7 @@ import todos_light_1 from "../../../assets/images/todos_light_1.png";
 import todos_light_2 from "../../../assets/images/todos_light_2.png";
 import typescript from "../../../assets/images/typescript.png";
 import { useIsThemeDark } from "../../../utils/useIsThemeDark";
-import { ImageSticker } from "../../ui";
+import { ImageSticker, ProjectSection } from "../../ui";
 
 export const SalToDo: React.FC = () => {
     const { t } = useTranslation();
@@ -25,61 +25,53 @@ export const SalToDo: React.FC = () => {
     }
 
     return (
-        <li>
-            <div className="mb-2 grid gap-2 sm:grid-cols-[auto_1fr]">
-                <h3>{t("app_1_title")}</h3>
-                <div className="col-span-full flex items-center justify-around gap-4 xs:col-span-1 xs:justify-end">
-                    <img
-                        title="Ruby on Rails"
-                        src={rails}
-                        alt="Ruby on Rails logo"
-                        className="sticker aspect-square h-6 transition-all hover:scale-105"
-                    />
-                    <img
-                        title="Railway"
-                        src={railway}
-                        alt="Railway logo"
-                        className="sticker aspect-square h-6 transition-all hover:scale-105"
-                    />
-                    <img
-                        title="React"
-                        src={react}
-                        alt="React logo"
-                        className="sticker aspect-square h-6 transition-all hover:scale-105"
-                    />
-                    <img
-                        title="TypeScript"
-                        src={typescript}
-                        alt="TypeScript logo"
-                        className="sticker aspect-square h-6 transition-all hover:scale-105"
-                    />
-                    <img
-                        title="Adobe"
-                        src={adobe}
-                        alt="Adobe logo"
-                        className="sticker aspect-square h-6 transition-all hover:scale-105"
-                    />
-                    <img
-                        title="Netlify"
-                        src={netlify}
-                        alt="Netlify logo"
-                        className="sticker aspect-square h-6 transition-all hover:scale-105"
-                    />
-                </div>
-            </div>
-            <div className="grid gap-4 md:grid-cols-2">
-                <p className="t text-justify">{t("app_1_desc")}</p>
-                <div className="space-y-4 pt-2">
-                    <ImageSticker
-                        src={img_1}
-                        alt={`Sal TODO - ${t("screenshot")}`}
-                    />
-                    <ImageSticker
-                        src={img_2}
-                        alt={`Sal TODO - ${t("screenshot")}`}
-                    />
-                </div>
-            </div>
-        </li>
+        <ProjectSection
+            title={"app_1_title"}
+            description={"app_1_desc"}
+            technologies={[
+                {
+                    title: "Ruby on Rails",
+                    src: rails,
+                    alt: "Ruby on Rails Logo",
+                },
+                {
+                    title: "Railway",
+                    src: railway,
+                    alt: "Railway Logo",
+                },
+                {
+                    title: "React",
+                    src: react,
+                    alt: "React Logo",
+                },
+                {
+                    title: "TypeScript",
+                    src: typescript,
+                    alt: "TypeScript Logo",
+                },
+                {
+                    title: "Adobe",
+                    src: adobe,
+                    alt: "Adobe Logo",
+                },
+                {
+                    title: "Netlify",
+                    src: netlify,
+                    alt: "Netlify Logo",
+                },
+            ]}
+            screenshots={[
+                {
+                    title: "",
+                    src: img_1,
+                    alt: "",
+                },
+                {
+                    title: "",
+                    src: img_2,
+                    alt: "",
+                },
+            ]}
+        />
     );
 };

@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import adobe from "../../../assets/images/adobe.ico";
 import netlify from "../../../assets/images/netlify.png";
 import rails from "../../../assets/images/rails.png";
@@ -10,10 +9,9 @@ import todos_light_1 from "../../../assets/images/todos_light_1.png";
 import todos_light_2 from "../../../assets/images/todos_light_2.png";
 import typescript from "../../../assets/images/typescript.png";
 import { useIsThemeDark } from "../../../utils/useIsThemeDark";
-import { ImageSticker, ProjectSection } from "../../ui";
+import { ProjectSection } from "../../ui";
 
 export const SalToDo: React.FC = () => {
-    const { t } = useTranslation();
     const isThemeDark = useIsThemeDark();
 
     let img_1 = todos_light_1;

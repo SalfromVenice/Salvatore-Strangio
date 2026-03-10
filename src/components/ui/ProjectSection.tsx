@@ -21,7 +21,7 @@ export const ProjectSection: React.FC<Props> = ({
     const { t } = useTranslation();
 
     return (
-        <li>
+        <div className="mb-4">
             <div className="mb-2 grid gap-2 sm:grid-cols-[auto_1fr]">
                 <div>
                     <h3>{t(title)}</h3>
@@ -41,7 +41,7 @@ export const ProjectSection: React.FC<Props> = ({
             </div>
             <div className="grid gap-4 md:grid-cols-2">
                 <p className="t text-justify">{t(description)}</p>
-                <div className="space-y-4 pt-2">
+                <div className="space-y-4">
                     {screenshots.map(({ src }) => (
                         <ImageSticker
                             key={src}
@@ -52,6 +52,6 @@ export const ProjectSection: React.FC<Props> = ({
                     ))}
                 </div>
             </div>
-        </li>
+        </div>
     );
 };

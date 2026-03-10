@@ -9,6 +9,7 @@ export const DemoUILogin: React.FC = () => {
     return (
         <ProjectSection
             title={"app_2_title"}
+            subtitle={"app_2_subtitle"}
             description={"app_2_desc"}
             technologies={[
                 {

@@ -1,5 +1,9 @@
-import { CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react";
-import { useState } from "react";
+import {
+    CaretLeftIcon,
+    CaretRightIcon,
+    CircleIcon,
+} from "@phosphor-icons/react";
+import { useId, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { DemoUILogin, DevStats, SalToDo, TokyoEvents } from "./projects";
 
@@ -46,6 +50,23 @@ export const ProjectsSection = () => {
     return (
         <div id="projects" className="mx-auto h-fit max-w-140">
             <h2 className="t uppercase">{t("projects")}</h2>
+            <div className="flex justify-center gap-2">
+                {projects.map((_, i) => {
+                    const key = useId();
+                    return (
+                        <CircleIcon
+                            key={key}
+                            size={8}
+                            weight={currentProject === i ? "fill" : "bold"}
+                            className={`${
+                                currentProject === i
+                                    ? "scale-125 text-accent-light dark:text-accent-dark"
+                                    : ""
+                            } transition-all`}
+                        />
+                    );
+                })}
+            </div>
             <div className="relative">
                 {projects[currentProject - 1] && (
                     <div
